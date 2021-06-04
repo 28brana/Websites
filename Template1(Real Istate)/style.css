@@ -1,0 +1,460 @@
+/* RESETING CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 100%;
+}
+/* HEADER MAIN CONTAINER WHICH COVERS THE WHOLE PHOTO AND ITS PARTS */
+#header-container{
+   
+    position: relative;
+    height: 80vh;
+}
+#header-container::before{
+    content: "" ;
+    position: absolute;
+    background-image: url('Image/fernand-de-canne-d0RsfpGYQig-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+}
+
+/* NAV BAR CSS  */
+
+#nav-bar-container{
+    line-height:50px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav-bar-items{
+    list-style: none;
+    display: flex;
+    margin: 0px 70px;
+}
+
+
+.nav-bar-items li a{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+.nav-bar-items li a:active{
+    background-color: blue;
+}
+
+
+/* Header Content */
+
+/* Header Content Text */
+
+#header-content-container{
+   
+    display: flex;
+    justify-content: center;
+    height: 91%;
+}
+#header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEADER TEXT CONTAINER */
+
+#header-text{
+    color: white;
+    width: 30%;
+    font-size: 1rem;
+    margin-right: 60px;
+}
+
+#header-text > *{
+    margin: 15px;
+}
+
+/* HEADER FORM MAIN CONTAINER  */
+
+#header-form-container{
+    font-size: 1rem;
+    background-color: white;
+  
+    width: 35%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+/* HEADER FROM CONTAINER */
+
+#header-form{
+    width: 80%;
+}
+
+#header-form select{
+    border:none;
+    margin: 5px 0px;
+    width: 100%;
+    padding: 15px;
+}
+
+#form-subcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+#form-subcontainer select{
+    width: 49%;
+}
+
+/* MAIN BUTTON STYLES */
+.main-btn{
+    margin:5px 0px 30px 0px;
+    background-color: rgb(233, 17, 17);
+    border-radius: 2px;
+    border-color: red;
+    color: white;
+    font-weight: bolder;
+    padding: 13px 15px;
+    font-size: 1rem;
+}
+
+.main-btn:hover{
+    color: red;
+    background-color: white;
+}
+/* HOUSE PURPOSE HOME */
+
+#house-purpose-container{
+    display: flex;
+    justify-content: center;
+}
+
+.house-purpose > *{
+    padding: 1.6vh; 
+}
+
+.house-purpose{
+    margin: 30px 10px;
+    background-color: #eee;
+    width: 20%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.house-purpose i{
+    color: seagreen;
+    font-size: 2.4rem;
+}
+
+.house-purpose h3 {
+    font-weight: normal;
+}
+
+.house-purpose a{
+    color: red;
+    margin-bottom: 3vh;
+}
+
+/* DETAIL CONTAINER */
+
+#detail-container{
+    height: 70vh;
+    background-image: url('Image/outsite-co-R-LK3sqLiBw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+/* DETAIL CARD */
+#detail-card{
+    width: 70%;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+#detail-card h2{
+  margin: 20px 0px;
+  
+}
+
+#detail-icon-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#detail-icon-container i{
+    font-size: 2.1rem;
+    margin: 30px;
+    color: rgb(64, 224, 149);
+}
+#detail-card .main-btn{
+    margin: 10px 0px 10px 34px;
+    padding: 15px 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* House card Section */
+#house-card-section{
+    font-size:1rem;
+    padding: 50px 300px;
+}
+
+/* HOUSE CARD HEADER */
+.house-header{
+    font-size:1rem;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+}
+
+/* HOUSE CARD  */
+.house-card{
+    margin: 10px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.house-card > div{
+    font-size:1rem;
+    margin: 10px 0px;
+}
+
+/* HOUSE CARD IMAGE */
+
+.house-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.house-img{
+    position: relative;
+}
+
+/* HOUSE CARD PRICE AND RATING CONTAINER */
+.house-price-container{
+    display: flex;
+    color: red;
+    justify-content: space-between;
+    padding: 10px ;
+}
+.fa-heart{
+    color: grey;
+}
+
+/* HOUSE CARD ICON */
+.house-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.house-icon i{
+    color:teal;
+}
+
+/* HOUSE STATUS */
+.house-status{
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    right: 0px;
+    background-color: green;
+    color: white;
+    
+}
+/* HOUSE BOTTOM BUTTON */
+.house-btn button{
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    background-color: darkblue;
+    padding: 13px;
+}
+
+/* HOUSE ADDRESS */
+.house-address{
+    padding: 0px 20px;
+}
+
+/* HOUSE CARDS SLIDER BUTTON */
+.slick-prev:before,
+.slick-next:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border:1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    font-weight: normal;
+}
+
+/* CUSTOMER REVIEW SECTION ---------------------------------------- */
+
+#customers-review-section{
+    font-size: 1rem;
+    background: #eee;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CUSTOMER REVIEW BOX */
+
+.customers-review-box{
+    
+    width: 50%;
+}
+
+
+.customers-review{
+    font-size:1rem;
+    margin: 20px;
+    color: rgb(0, 110, 255);
+    background: white;
+    padding: 30px;
+}
+
+.customers-review p {
+    margin: 10px;
+}
+
+.customers-review p span{
+    color: black;
+}
+
+.customers-link{
+    color: red;;
+}
+
+/* COLLECTION SECTION------------------------------- */
+#Collection-section{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.collection-container{
+
+    display: flex;
+    margin: 30px 0px ;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.collection{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    
+}
+
+.collection-img img{
+    width: 100%;
+}
+
+.collection-text-container{
+    font-size: 1rem;
+    
+    padding: 30px;
+}
+
+.collection-text-container h2{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.collection-text-container p{
+    margin-top: 10px;
+}
+
+/* CONTACT SECTION ---------------------------------------*/
+#contact-section{
+    position: relative;
+    height: 80vh;
+}
+
+#contact-section::before{
+    content: "";
+    background-image: url('Image/contact.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+#contact-container{
+    right: 20%;
+    top:20%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    background-color: white;
+    width: 35%;
+}
+#contact-container p{
+    margin: 20px 0px;
+}
+
+#contact-container button{
+    margin: 40px 0px;
+}
+
+/* FOOTER ------------------------------------------- */
+
+#footer{
+    font-size:1rem;
+    color:white;
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#f-item1{
+    width: 10%;
+}
+
+#f-item1 h2{
+    color:  red;
+    margin: 5px 0px;
+}
+
+.footer-links{
+    padding: 40px 10px;
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    color: grey;
+}
+
