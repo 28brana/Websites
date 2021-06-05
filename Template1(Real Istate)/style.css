@@ -9,6 +9,7 @@
 html{
     font-size: 100%;
 }
+
 /* HEADER MAIN CONTAINER WHICH COVERS THE WHOLE PHOTO AND ITS PARTS */
 #header-container{
    
@@ -33,7 +34,18 @@ html{
     line-height:50px;
     display: flex;
     justify-content: flex-end;
-    
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.164))
+}
+.drop-down{
+    display: flex;
+}
+.drop-btn{
+    display: none;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    font-size: 1.3rem;
+    padding: 0px 13px;
 }
 
 .nav-bar-items{
@@ -53,7 +65,7 @@ html{
 }
 
 .nav-bar-items li a:active{
-    background-color: blue;
+    background:linear-gradient(transparent,black)
 }
 
 
@@ -62,7 +74,6 @@ html{
 /* Header Content Text */
 
 #header-content-container{
-   
     display: flex;
     justify-content: center;
     height: 91%;
@@ -92,25 +103,32 @@ html{
 #header-form-container{
     font-size: 1rem;
     background-color: white;
-  
     width: 35%;
     height: 80%;
     display: grid;
     place-items: center;
+    
 }
 
 /* HEADER FROM CONTAINER */
 
 #header-form{
+    
     width: 80%;
 }
 
 #header-form select{
+    
     border:none;
     margin: 5px 0px;
     width: 100%;
     padding: 15px;
 }
+
+#header-form select:focus{
+    outline: none;
+}
+
 
 #form-subcontainer{
     display: flex;
@@ -136,7 +154,7 @@ html{
     color: red;
     background-color: white;
 }
-/* HOUSE PURPOSE HOME */
+/* HOUSE PURPOSE HOME ---------------------------------- */
 
 #house-purpose-container{
     display: flex;
@@ -315,6 +333,7 @@ html{
     background: #eee;
     height: 50vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -322,13 +341,14 @@ html{
 /* CUSTOMER REVIEW BOX */
 
 .customers-review-box{
-    
     width: 50%;
+    font-size: 1rem;
 }
 
 
+
 .customers-review{
-    font-size:1rem;
+    
     margin: 20px;
     color: rgb(0, 110, 255);
     background: white;
@@ -354,20 +374,28 @@ html{
     height: 90vh;
     justify-content: center;
     align-items: center;
+    
    
 }
 
-.collection-container{
 
+
+.collection-container{
+    
     display: flex;
     margin: 30px 0px ;
     justify-content: center;
     align-content: center;
     justify-content: space-evenly;
+    
+    flex-wrap: wrap;
 }
 .collection{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 20%;
+    font-size: 1rem;
+    flex-basis: 300px;
+    margin: 20px 0px;
     
 }
 
@@ -383,9 +411,12 @@ html{
 
 .collection-text-container h2{
     color: red;
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
-
+.collection-text-container h1{
+    font-size: 1.5rem;
+}
 .collection-text-container p{
     margin-top: 10px;
 }
@@ -438,10 +469,13 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-
+.footer-item{
+    width: 100px;
+}
 #f-item1{
-    width: 10%;
+    width: 300px;
 }
 
 #f-item1 h2{
@@ -458,3 +492,138 @@ html{
     color: grey;
 }
 
+/* MEDIA QUERY FOR RESPONSIVE */
+
+@media screen and (min-height:1000px){
+    #header-form-container{
+        height: 65%;
+    }
+
+   
+}
+@media screen and (max-width:1300px){
+    #house-card-section{
+        padding: 50px 200px;
+    }
+}
+@media screen and (max-width:1000px) {
+    html{
+        font-size: 90%;
+    }
+    #house-card-section{
+        padding: 50px 150px;
+    }
+    
+   
+}
+@media screen  and (max-width:900px ){
+    #header-form-container{
+        height: 55%;
+    }
+}
+@media screen  and (max-width:800px){
+    #header-content{
+        flex-direction: column;
+    }
+    #header-text{
+        width: 60%;
+        padding: 0px 0px 20px 20px;
+    }
+    #header-form-container{
+        width: 60%;
+        height: 45%;
+    }
+    #nav-bar-container{
+        justify-content: space-evenly;
+    }
+    .customers-review-box{
+        width: 60%;
+    }
+    
+}
+
+@media screen  and (max-width:640px){
+    html{
+        font-size: 70%;
+    }
+    #nav-bar-container{
+        background-color: black;
+        position: absolute;
+        z-index: 2;
+        flex-direction: column;
+    }
+    .drop-btn{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        display: block;
+    }
+    .drop-down{
+        display: none;
+        flex-direction: column;
+    }
+    .nav-bar-items{
+        flex-direction: column;
+    }
+    .drop-btn:hover + .drop-down  {
+        display: flex;
+        
+    }
+
+    #house-purpose-container{
+        
+        justify-content: space-evenly;
+    }
+
+    .house-purpose > *{
+        padding: 1vh; 
+    }
+
+    .house-purpose{
+        width: 40%;
+    }
+
+    /* HOUSE CARD */
+    #house-card-section{
+        padding: 50px 100px;
+    }
+
+    .customers-review-box{
+        width: 70%;
+    }
+
+    #Collection-section{
+        height: 150vh;
+    }
+    .collection-container{
+        margin: 10px;
+    }
+
+    #contact-container{
+        width: 70%;
+    }
+
+
+}
+
+@media screen and (max-width:460px){
+    #house-card-section{
+        padding: 50px 50px;
+    }
+
+    .customers-review-box{
+        width: 90%;
+    }
+
+    #contact-container{
+        width: 80%;
+        
+    }
+
+    #contact-section{
+        
+        height: 60vh;
+    }
+
+    
+}
