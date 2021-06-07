@@ -28,6 +28,14 @@ $('.house-card-container').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:false
+            }
         }
     ]
 

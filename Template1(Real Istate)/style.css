@@ -12,9 +12,7 @@ html{
 
 /* HEADER MAIN CONTAINER WHICH COVERS THE WHOLE PHOTO AND ITS PARTS */
 #header-container{
-   
     position: relative;
-    height: 80vh;
 }
 #header-container::before{
     content: "" ;
@@ -28,7 +26,7 @@ html{
     z-index: -1; 
 }
 
-/* NAV BAR CSS  */
+/* NAV BAR CSS --------------------------- */
 
 #nav-bar-container{
     line-height:50px;
@@ -69,60 +67,73 @@ html{
 }
 
 
-/* Header Content */
+/* Header Content -------------------------------------*/
 
 /* Header Content Text */
 
 #header-content-container{
+    /* height: 60vh; */
     display: flex;
     justify-content: center;
-    height: 91%;
+    
 }
 #header-content{
+    margin: 5% 5%;
+    height: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: wrap;
 }
 
 
 /* HEADER TEXT CONTAINER */
 
 #header-text{
+    
     color: white;
-    width: 30%;
-    font-size: 1rem;
-    margin-right: 60px;
+    width: max(50%,100%);
+  
+    font-size: clamp(1vw,13px,16px);
+    margin:auto;
 }
 
 #header-text > *{
-    margin: 15px;
+   margin: 5%;
 }
 
-/* HEADER FORM MAIN CONTAINER  */
+/* HEADER FORM MAIN CONTAINER ------------------------ */
 
 #header-form-container{
-    font-size: 1rem;
+    margin:auto;
     background-color: white;
-    width: 35%;
-    height: 80%;
-    display: grid;
-    place-items: center;
-    
+    width: max(50%,100%);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HEADER FROM CONTAINER */
 
 #header-form{
-    
+    margin: auto;
     width: 80%;
+}
+#header-container h2{
+    
+    margin: 5% ;
+    font-size: 1.5em;
+
 }
 
 #header-form select{
-    
     border:none;
-    margin: 5px 0px;
+    margin: 2% 0%;
     width: 100%;
-    padding: 15px;
+    padding: 1.3em;
 }
 
 #header-form select:focus{
@@ -133,21 +144,23 @@ html{
 #form-subcontainer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #form-subcontainer select{
-    width: 49%;
+    flex: 1;
+    margin-left: 1%;
 }
 
 /* MAIN BUTTON STYLES */
 .main-btn{
-    margin:5px 0px 30px 0px;
+    margin:2% 0% 4%;
     background-color: rgb(233, 17, 17);
     border-radius: 2px;
     border-color: red;
     color: white;
     font-weight: bolder;
-    padding: 13px 15px;
-    font-size: 1rem;
+    padding: 1em;
+    font-size: 1em;
 }
 
 .main-btn:hover{
@@ -157,7 +170,9 @@ html{
 /* HOUSE PURPOSE HOME ---------------------------------- */
 
 #house-purpose-container{
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -166,9 +181,11 @@ html{
 }
 
 .house-purpose{
-    margin: 30px 10px;
+    
+    margin: 2% auto ;
     background-color: #eee;
     width: 20%;
+    
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -188,10 +205,10 @@ html{
     margin-bottom: 3vh;
 }
 
-/* DETAIL CONTAINER */
+/* DETAIL CONTAINER --------------------------------------*/
 
 #detail-container{
-    height: 70vh;
+    
     background-image: url('Image/outsite-co-R-LK3sqLiBw-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,48 +221,53 @@ html{
 
 }
 
-/* DETAIL CARD */
+/* DETAIL CARD ---------*/
 #detail-card{
+    
     width: 70%;
+    margin: 4%;
     background-color: white;
-    padding: 20px 50px;
+    padding: 2% 5%;
 }
 
 #detail-card h2{
-  margin: 20px 0px;
+   
+  margin: 3% 0px;
   
 }
 
 #detail-icon-container{
+    
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 0px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 2% 0px;
+}
+.detail-icon{
+    flex-grow: 1;
 }
 
 #detail-icon-container i{
-    font-size: 2.1rem;
-    margin: 30px;
+
+    font-size: clamp(14px,1.7vw,2.5em);
+    margin: 3% 0%;
+    
     color: rgb(64, 224, 149);
 }
-#detail-card .main-btn{
-    margin: 10px 0px 10px 34px;
-    padding: 15px 20px;
-}
+
 
 /* --------------------------------------------------------------------- */
 
 /* House card Section */
 #house-card-section{
-    font-size:1rem;
-    padding: 50px 300px;
+    padding: 5% 10%;
 }
 
 /* HOUSE CARD HEADER */
 .house-header{
-    font-size:1rem;
+    font-size: clamp(20px,1.9vw,2vw);
     text-align: center;
-    margin: 10px 0px 40px 0px;
+    margin: 2% 0px ;
 }
 
 /* HOUSE CARD  */
@@ -329,9 +351,8 @@ html{
 /* CUSTOMER REVIEW SECTION ---------------------------------------- */
 
 #customers-review-section{
-    font-size: 1rem;
+    
     background: #eee;
-    height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -342,21 +363,22 @@ html{
 
 .customers-review-box{
     width: 50%;
-    font-size: 1rem;
+    margin: 4%;
+    
 }
 
 
 
 .customers-review{
     
-    margin: 20px;
+    margin: 2.5%;
     color: rgb(0, 110, 255);
     background: white;
-    padding: 30px;
+    padding: 3%;
 }
 
 .customers-review p {
-    margin: 10px;
+    margin: 2%;
 }
 
 .customers-review p span{
@@ -371,11 +393,9 @@ html{
 #Collection-section{
     display: flex;
     flex-direction: column;
-    height: 90vh;
     justify-content: center;
     align-items: center;
     
-   
 }
 
 
@@ -383,22 +403,25 @@ html{
 .collection-container{
     
     display: flex;
-    margin: 30px 0px ;
+    margin: 4% 0px ;
     justify-content: center;
     align-content: center;
     justify-content: space-evenly;
     
     flex-wrap: wrap;
 }
+
 .collection{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 20%;
-    font-size: 1rem;
+    
     flex-basis: 300px;
-    margin: 20px 0px;
+    margin: 2% 0px;
     
 }
-
+.collection-header{
+    margin-top: 3%;
+}
 .collection-img img{
     width: 100%;
 }
@@ -406,25 +429,25 @@ html{
 .collection-text-container{
     font-size: 1rem;
     
-    padding: 30px;
+    padding: 5%;
 }
 
 .collection-text-container h2{
     color: red;
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 .collection-text-container h1{
     font-size: 1.5rem;
 }
 .collection-text-container p{
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 /* CONTACT SECTION ---------------------------------------*/
 #contact-section{
+    border:solid transparent;
     position: relative;
-    height: 80vh;
 }
 
 #contact-section::before{
@@ -439,45 +462,46 @@ html{
 }
 
 #contact-container{
-    right: 20%;
-    top:20%;
+    font-size: clamp(12px,2vw,1em);
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    position: absolute;
+    padding: 2%;
+    margin:5% auto;
     background-color: white;
     width: 35%;
 }
 #contact-container p{
-    margin: 20px 0px;
+    margin: 3% 0px;
 }
 
 #contact-container button{
-    margin: 40px 0px;
+    margin: 5% 0px;
 }
 
 /* FOOTER ------------------------------------------- */
 
 #footer{
-    font-size:1rem;
     color:white;
-    background-color: black;
-    height: 40vh;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 .footer-item{
-    width: 100px;
-}
-#f-item1{
-    width: 300px;
+    flex-grow: 1;
+    margin: 2% 0%;
+
+    
 }
 
+#f-item1{
+    margin: auto;
+    flex-grow: 2;
+}
 #f-item1 h2{
     color:  red;
     margin: 5px 0px;
@@ -492,73 +516,48 @@ html{
     color: grey;
 }
 
-/* MEDIA QUERY FOR RESPONSIVE */
+/* NEW MEDIA */
 
-@media screen and (min-height:1000px){
-    #header-form-container{
-        height: 65%;
-    }
 
-   
-}
-@media screen and (max-width:1300px){
-    #house-card-section{
-        padding: 50px 200px;
-    }
-}
-@media screen and (max-width:1000px) {
-    html{
-        font-size: 90%;
-    }
-    #house-card-section{
-        padding: 50px 150px;
-    }
-    
-   
-}
-@media screen  and (max-width:900px ){
-    #header-form-container{
-        height: 55%;
-    }
-}
-@media screen  and (max-width:800px){
+@media screen  and (max-width:1200px){
     #header-content{
         flex-direction: column;
     }
-    #header-text{
-        width: 60%;
-        padding: 0px 0px 20px 20px;
+}
+
+@media screen and (max-width:1000px) {
+
+    #house-purpose-container{
+        flex-direction: column;
     }
-    #header-form-container{
-        width: 60%;
-        height: 45%;
-    }
-    #nav-bar-container{
-        justify-content: space-evenly;
-    }
-    .customers-review-box{
-        width: 60%;
+    .house-purpose{
+        width: 50%;
     }
     
 }
 
+
+
 @media screen  and (max-width:640px){
-    html{
-        font-size: 70%;
+    #header-content{
+        margin: 12% 5%;
     }
     #nav-bar-container{
         background-color: black;
         position: absolute;
+        width: 100%;
+        
         z-index: 2;
         flex-direction: column;
     }
     .drop-btn{
-        margin: 10px;
-        padding: 10px;
+        margin: 1%;
+        padding: 1%;
         border-radius: 5px;
         display: block;
     }
     .drop-down{
+        text-align: center;
         display: none;
         flex-direction: column;
     }
@@ -570,60 +569,50 @@ html{
         
     }
 
-    #house-purpose-container{
-        
-        justify-content: space-evenly;
-    }
-
-    .house-purpose > *{
-        padding: 1vh; 
-    }
-
-    .house-purpose{
-        width: 40%;
-    }
-
-    /* HOUSE CARD */
-    #house-card-section{
-        padding: 50px 100px;
-    }
-
-    .customers-review-box{
-        width: 70%;
-    }
-
-    #Collection-section{
-        height: 150vh;
-    }
-    .collection-container{
-        margin: 10px;
-    }
-
-    #contact-container{
-        width: 70%;
-    }
-
-
-}
-
-@media screen and (max-width:460px){
-    #house-card-section{
-        padding: 50px 50px;
-    }
-
-    .customers-review-box{
-        width: 90%;
-    }
-
     #contact-container{
         width: 80%;
-        
     }
-
-    #contact-section{
-        
-        height: 60vh;
-    }
-
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
