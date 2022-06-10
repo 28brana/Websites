@@ -277,7 +277,7 @@ body{
 
 #campus-section::before{
     content: "";
-    background:url('campus-bg.jpg');
+    background:url('images/campus-bg.jpg');
     position: absolute;
     height: 100%;
     background-size: cover;
@@ -403,7 +403,7 @@ body{
 /* REGISTERATION SECTION ------------------------------- */
 #register-section{
 
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(255, 166, 0, 0.322)), url('register.jpg');
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(255, 166, 0, 0.322)), url('images/register.jpg');
     background-size: cover;
     border:1px solid transparent;
    

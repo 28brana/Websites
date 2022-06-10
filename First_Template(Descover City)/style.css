@@ -193,7 +193,7 @@
 
 #search-page::before{
     content:" ";
-    background-image: url("home-header-bg.jpg");
+    background-image: url("images/home-header-bg.jpg");
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
